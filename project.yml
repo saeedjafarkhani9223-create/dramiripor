@@ -8,11 +8,12 @@ targets:
     type: application
     platform: iOS
     sources:
-      - path: Sources
+      - path: .
         excludes:
-          - "Info.plist"
+          - "project.yml"
+          - "codemagic.yaml"
     info:
-      path: Sources/Info.plist
+      path: Info.plist
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.antitheft.trackerapp
